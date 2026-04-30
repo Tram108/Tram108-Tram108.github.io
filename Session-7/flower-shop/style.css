@@ -1,0 +1,195 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.4;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Background */
+header {
+  background: url('images/wood-bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  padding: 20px;
+}
+
+.logo-box img {
+  width: 200px; /* Điều chỉnh theo ảnh logo thực tế */
+}
+
+/* Nav Bar */
+nav {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+  background: rgba(128, 128, 128, 0.7); /* Màu xám trong suốt */
+  border-radius: 15px 0 0 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #800000; /* Màu đỏ đô */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+/* Welcome Bar */
+.welcome-bar {
+  text-align: right;
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 20px;
+}
+
+.welcome-bar p {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Grid Layout */
+.content-grid {
+  display: grid;
+  grid-template-columns: 500px 220px 230px;
+  gap: 25px;
+}
+
+/* Typography */
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Icons trước tiêu đề */
+.red-icon::before { content: "✿ "; color: red; }
+.blue-icon::before { content: "✿ "; color: #3498db; }
+.orange-icon::before { content: "✿ "; color: orange; }
+
+/* New Product Styling */
+.product-entry {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.product-entry img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.product-desc {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 15px;
+  flex: 1;
+}
+
+.product-desc h3 {
+  color: #a02020;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.product-desc p {
+  font-size: 12px;
+  color: #444;
+}
+
+/* Promotion Styling */
+.promo-item {
+  text-align: center;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.promo-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.promo-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Catalog Styling */
+#catalog ul {
+  list-style: none;
+}
+
+#catalog ul li {
+  border-bottom: 1px dotted #ccc;
+  padding: 8px 0;
+}
+
+#catalog ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#catalog ul li a::before {
+  content: "» ";
+  color: #ccc;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 50px;
+  border-top: 1px dotted #ccc;
+  padding-top: 20px;
+  position: relative;
+}
+
+.footer-info p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.footer-logo {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 24px;
+  color: #ccc;
+}
+
+.footer-pattern {
+  height: 40px;
+  background: url('images/flower-pattern.png') repeat-x bottom;
+  margin-top: 20px;
+}
